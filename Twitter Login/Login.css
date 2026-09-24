@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f9f9;
+    color: #0f1419;
+}
+
+
+/* Main Page */
+
+.login-page {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* Left Side */
+
+.brand-panel {
+    flex: 1;
+    background: linear-gradient(135deg, #1da1f2, #0d8ad2);
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 80px;
+}
+
+.brand-panel h1 {
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.brand-panel h2 {
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+.brand-panel p {
+    font-size: 20px;
+}
+
+
+/* Right Side */
+
+.form-panel {
+    width: 480px;
+
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+.form-card {
+    width: 100%;
+    max-width: 360px;
+}
+
+
+/* Logo */
+
+.logo {
+    color: #1da1f2;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+
+/* Title */
+
+.form-card h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+
+/* Labels */
+
+label {
+    display: block;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    color: #536471;
+
+    margin-bottom: 6px;
+}
+
+
+/* Inputs */
+
+input {
+    width: 100%;
+
+    padding: 13px;
+
+    font-size: 16px;
+
+    border: 1px solid #cfd9de;
+    border-radius: 8px;
+
+    outline: none;
+
+    margin-bottom: 5px;
+}
+
+input:focus {
+    border-color: #1da1f2;
+}
+
+
+/* Password */
+
+.password-box {
+    position: relative;
+}
+
+.password-box input {
+    padding-right: 60px;
+}
+
+.password-box button {
+    position: absolute;
+
+    right: 10px;
+    top: 10px;
+
+    border: none;
+    background: none;
+
+    color: #1da1f2;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* Error */
+
+#emailError,
+#passwordError {
+    display: block;
+
+    color: #f4212e;
+
+    font-size: 12px;
+
+    min-height: 18px;
+}
+
+
+/* Login Button */
+
+#signinBtn {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 25px;
+
+    background: #0f1419;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#signinBtn:hover:not(:disabled) {
+    background: #1da1f2;
+}
+
+#signinBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+/* Links */
+
+.form-card > a {
+    display: block;
+
+    text-align: center;
+
+    margin-top: 16px;
+
+    color: #1da1f2;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.form-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* Divider */
+
+.divider {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 25px 0;
+
+    color: #536471;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+
+    height: 1px;
+
+    background: #cfd9de;
+
+    flex: 1;
+}
+
+
+/* Signup */
+
+.form-card p {
+    text-align: center;
+
+    color: #536471;
+}
+
+.form-card p a {
+    color: #1da1f2;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .login-page {
+        flex-direction: column;
+    }
+
+    .brand-panel {
+        padding: 40px 25px;
+
+        text-align: center;
+
+        align-items: center;
+    }
+
+    .brand-panel h1 {
+        font-size: 28px;
+
+        margin-bottom: 20px;
+    }
+
+    .brand-panel h2 {
+        font-size: 32px;
+    }
+
+    .form-panel {
+        width: 100%;
+
+        padding: 40px 20px;
+    }
+}

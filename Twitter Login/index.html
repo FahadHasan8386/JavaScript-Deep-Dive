@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweetly - Login</title>
+
+    <link rel="stylesheet" href="Login.css">
+</head>
+
+<body>
+
+    <div class="login-page">
+
+        <!-- Left Side -->
+        <div class="brand-panel">
+
+            <h1>Tweetly</h1>
+
+            <h2>Happening Now.</h2>
+
+            <p>Join the conversation today.</p>
+
+        </div>
+
+
+        <!-- Right Side -->
+        <div class="form-panel">
+
+            <div class="form-card">
+
+                <h2 class="logo">Tweetly</h2>
+
+                <h3>Sign in to Tweetly</h3>
+
+
+                <form id="loginForm">
+
+                    <!-- Email -->
+                    <label>Email or Username</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email or Username"
+                    >
+
+                    <span id="emailError"></span>
+
+
+                    <!-- Password -->
+                    <label>Password</label>
+
+                    <div class="password-box">
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Password"
+                        >
+
+                        <button
+                            type="button"
+                            id="togglePassword"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+
+                    <span id="passwordError"></span>
+
+
+                    <!-- Login Button -->
+                    <button
+                        type="submit"
+                        id="signinBtn"
+                        disabled
+                    >
+                        Sign in
+                    </button>
+
+                </form>
+
+
+                <a href="#">Forget Password?</a>
+
+                <div class="divider">
+                    <span>Or</span>
+                </div>
+
+                <p>
+                    Don't have an Account?
+                    <a href="#">Sign up</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="Login.js"></script>
+
+</body>
+
+</html>
